@@ -3,7 +3,7 @@
   import Hero from "./Hero.svelte";
 </script>
 
-<main class="">
+<main class="00">
   <Hero />
   <!--
   Description label
