@@ -1,7 +1,9 @@
 /* NOTE: Some code has been taken from github.com/KTibow/m3-svelte. Please support the developer. */
 
 import { writable } from "svelte/store";
+import { persisted } from "svelte-persisted-store";
 
+export const language = persisted<"tr" | "en" | "de">("language", "en");
 export const styling = writable(`
 @media (prefers-color-scheme: light) {
   :root {

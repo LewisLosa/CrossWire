@@ -1,9 +1,6 @@
 <!-- NOTE: Some code has been taken from github.com/KTibow/m3-svelte. Please support the developer. -->
 
 <script lang="ts">
-  const name = "CrossWire";
-  const description =
-    " A lightweight application interface to bypass censorship on Windows, Linux, and macOS. ";
   const github = "https://github.com/LewisLosa/CrossWire";
   const discord = "https://discord.gg/CJuhVaq2Aj";
 </script>
@@ -16,12 +13,15 @@
       width="16"
       height="16"
     />
-    <h1>{name}</h1>
+    <h1>CrossWire</h1>
     <div style:flex-grow="1"></div>
     <a href={github}>GitHub</a>
     <a href={discord}>Discord</a>
   </div>
-  <p>{description}</p>
+  <p>
+    A lightweight application interface to bypass censorship on Windows, Linux,
+    and macOS.
+  </p>
 </div>
 
 <style>

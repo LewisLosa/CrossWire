@@ -1,6 +1,7 @@
 import { defineConfig } from "vite";
 import { sveltekit } from "@sveltejs/kit/vite";
 import tailwindcss from '@tailwindcss/vite';
+import { wuchale } from '@wuchale/vite-plugin'
 // @ts-expect-error process is a nodejs global
 const host = process.env.TAURI_DEV_HOST;
 
@@ -8,6 +9,7 @@ const host = process.env.TAURI_DEV_HOST;
 // @ts-ignore
 export default defineConfig(async () => ({
   plugins: [
+    wuchale(),
     tailwindcss(),
     sveltekit(),
   ],

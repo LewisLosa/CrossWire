@@ -1,5 +1,20 @@
-// Tauri doesn't have a Node.js server to do proper SSR
-// so we use adapter-static with a fallback to index.html to put the site in SPA mode
-// See: https://svelte.dev/docs/kit/single-page-apps
-// See: https://v2.tauri.app/start/frontend/sveltekit/ for more info
+import { locales } from "virtual:wuchale/locales";
+import { browser } from "$app/environment";
+import { loadLocale } from "wuchale/load-utils";
+import "../locales/loader.svelte.js";
+import { language } from "./state.js";
+import { get } from "svelte/store";
 export const ssr = false;
+
+/** @type {import('./$types').LayoutLoad} */
+export const load = async ({ url }) => {
+  const locale = get(language) || "en";
+  console.log("Current locale:", locale);
+  console.log("Available locales:", locales);
+  if (!locales.includes(locale)) {
+    return;
+  }
+  if (browser) {
+    await loadLocale(locale);
+  }
+};

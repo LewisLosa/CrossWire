@@ -23,15 +23,27 @@ importers:
       '@tauri-apps/plugin-opener':
         specifier: ^2
         version: 2.5.0
+      '@wuchale/svelte':
+        specifier: ^0.15.1
+        version: 0.15.1
+      '@wuchale/vite-plugin':
+        specifier: ^0.14.6
+        version: 0.14.6
       iconify:
         specifier: ^1.4.0
         version: 1.4.0
       m3-svelte:
         specifier: ^5.8.0
         version: 5.8.0
+      svelte-persisted-store:
+        specifier: ^0.12.0
+        version: 0.12.0(svelte@5.39.6)
       tailwindcss:
         specifier: ^4.1.13
         version: 4.1.13
+      wuchale:
+        specifier: ^0.16.5
+        version: 0.16.5
     devDependencies:
       '@sveltejs/adapter-static':
         specifier: ^3.0.6
@@ -579,6 +591,12 @@ packages:
   '@types/estree@1.0.8':
     resolution: {integrity: sha512-dWHzHa2WqEXI/O1E9OjrocMTKJl2mSrEolh1Iomrv6U+JuNwaHXsXx9bLu5gG7BUWFIN0skIQJQ/L1rIex4X6w==}
 
+  '@wuchale/svelte@0.15.1':
+    resolution: {integrity: sha512-abG52FmZHXpb93c5vx14RFh9W9LpC8oP/nznPi0EfIpQsdYpgGg2Z8EjfFQtSZ2CS/OnSNiYE1GgybgGq/Kunw==}
+
+  '@wuchale/vite-plugin@0.14.6':
+    resolution: {integrity: sha512-/OPj/tK56xco16YscktzKbdc8hy0MtoEw4Bl5ifACxbTIFZ8CwFudiM37PrIwWqPHPlpzlxTjFdeauIu4X5qow==}
+
   abab@2.0.6:
     resolution: {integrity: sha512-j2afSsaIENvHZN2B8GOpF566vZ5WVk5opAiMTvWgaQT8DkbOqsTfvNAvHoRGU2zzP8cPoqys+xHTRDWW8L+/BA==}
     deprecated: Use your platform's native atob() and btoa() methods instead
@@ -969,6 +987,9 @@ packages:
     resolution: {integrity: sha512-5gTmgEY/sqK6gFXLIsQNH19lWb4ebPDLA4SdLP7dsWkIXHWlG66oPuVvXSGFPppYZz8ZDZq0dYYrbHfBCVUb1Q==}
     engines: {node: '>=12'}
 
+  pofile@1.1.4:
+    resolution: {integrity: sha512-r6Q21sKsY1AjTVVjOuU02VYKVNQGJNQHjTIvs4dEbeuuYfxgYk/DGD2mqqq4RDaVkwdSq0VEtmQUOPe/wH8X3g==}
+
   postcss@8.5.6:
     resolution: {integrity: sha512-3Ybi1tAuwAP9s0r1UQ2J4n5Y0G05bJkpUIO0/bI9MhwmD70S5aTWbXGBwxHrelT+XM1k6dM0pk+SwNkpTRN7Pg==}
     engines: {node: ^10 || ^12 || >=14}
@@ -1028,6 +1049,12 @@ packages:
     peerDependencies:
       svelte: ^4.0.0 || ^5.0.0-next.0
       typescript: '>=5.0.0'
+
+  svelte-persisted-store@0.12.0:
+    resolution: {integrity: sha512-BdBQr2SGSJ+rDWH8/aEV5GthBJDapVP0GP3fuUCA7TjYG5ctcB+O9Mj9ZC0+Jo1oJMfZUd1y9H68NFRR5MyIJA==}
+    engines: {node: '>=0.14'}
+    peerDependencies:
+      svelte: ^3.48.0 || ^4 || ^5
 
   svelte@5.39.6:
     resolution: {integrity: sha512-bOJXmuwLNaoqPCTWO8mPu/fwxI5peGE5Efe7oo6Cakpz/G60vsnVF6mxbGODaxMUFUKEnjm6XOwHEqOht6cbvw==}
@@ -1162,6 +1189,10 @@ packages:
         optional: true
       utf-8-validate:
         optional: true
+
+  wuchale@0.16.5:
+    resolution: {integrity: sha512-g/6ZR+gBhzZq227y5MJvhrJkG/wYUfUvUa+zvAo1Q6K9dhiMWSz6YS2p3Aix2uM3sAx0KeCe9y8XAKprXnQiFg==}
+    hasBin: true
 
   xml-name-validator@4.0.0:
     resolution: {integrity: sha512-ICP2e+jsHvAj2E2lIHxa5tjXRlKDJo4IdvPvCXbXQGdzSfmSpNVyIKMvoZHjDY9DP0zV17iI85o90vRFXNccRw==}
@@ -1541,6 +1572,15 @@ snapshots:
 
   '@types/estree@1.0.8': {}
 
+  '@wuchale/svelte@0.15.1':
+    dependencies:
+      svelte: 5.39.6
+      wuchale: 0.16.5
+
+  '@wuchale/vite-plugin@0.14.6':
+    dependencies:
+      wuchale: 0.16.5
+
   abab@2.0.6: {}
 
   acorn-globals@6.0.0:
@@ -1919,6 +1959,8 @@ snapshots:
 
   picomatch@4.0.3: {}
 
+  pofile@1.1.4: {}
+
   postcss@8.5.6:
     dependencies:
       nanoid: 3.3.11
@@ -1999,6 +2041,10 @@ snapshots:
       typescript: 5.6.3
     transitivePeerDependencies:
       - picomatch
+
+  svelte-persisted-store@0.12.0(svelte@5.39.6):
+    dependencies:
+      svelte: 5.39.6
 
   svelte@5.39.6:
     dependencies:
@@ -2102,6 +2148,16 @@ snapshots:
       webidl-conversions: 7.0.0
 
   ws@8.18.3: {}
+
+  wuchale@0.16.5:
+    dependencies:
+      '@sveltejs/acorn-typescript': 1.0.6(acorn@8.15.0)
+      acorn: 8.15.0
+      chokidar: 4.0.3
+      magic-string: 0.30.19
+      picomatch: 4.0.3
+      pofile: 1.1.4
+      tinyglobby: 0.2.15
 
   xml-name-validator@4.0.0: {}
 

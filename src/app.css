@@ -1,6 +1,7 @@
 @import "m3-svelte/misc/styles.css";
 @import "m3-svelte/misc/recommended-styles.css";
 @import "tailwindcss";
+@source not "../locales/";
 @media (prefers-color-scheme: light) {
   :root {
     color-scheme: light;

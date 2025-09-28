@@ -1,0 +1,77 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-28T15:39:38.573Z\n"
+"PO-Revision-Date: 2025-09-28T16:09:30.107Z\n"
+"Last-Translator: \n"
+"Language: en\n"
+"Language-Team: \n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n == 1 ? 0 : 1;\n"
+"MIME-Version: 1.0\n"
+
+#: src/routes/Hero.svelte
+msgid "<0/> Cross Platform"
+msgstr "<0/> Cross Platform"
+
+#: src/routes/Hero.svelte
+msgid "<0/> UI From Material 3"
+msgstr "<0/> UI From Material 3"
+
+#: src/lib/misc/Layer.svelte
+msgid "Firefox"
+msgstr "Firefox"
+
+#: src/lib/misc/Layer.svelte
+msgid "Chrome"
+msgstr "Chrome"
+
+#: src/lib/misc/Layer.svelte
+msgid "Safari"
+msgstr "Safari"
+
+#: src/lib/misc/Layer.svelte
+msgid "SourceGraphic"
+msgstr "SourceGraphic"
+
+#: src/lib/misc/Layer.svelte
+msgid "R"
+msgstr "R"
+
+#: src/lib/misc/Layer.svelte
+msgid "B"
+msgstr "B"
+
+#: src/lib/misc/Layer.svelte
+msgid "Enter"
+msgstr "Enter"
+
+#: src/lib/misc/Layer.svelte
+msgid "BUTTON"
+msgstr "BUTTON"
+
+#: src/routes/Branding.svelte
+msgid "KTibow's"
+msgstr "KTibow's"
+
+#: src/routes/Branding.svelte
+msgid "GitHub"
+msgstr "GitHub"
+
+#: src/routes/Branding.svelte
+msgid "Discord"
+msgstr "Discord"
+
+#: src/routes/Branding.svelte
+msgid ""
+"A lightweight application interface to bypass censorship on Windows, Linux,\n"
+"and macOS."
+msgstr ""
+"A lightweight application interface to bypass censorship on Windows, Linux,\n"
+"and macOS."
+
+#: src/routes/Branding.svelte
+msgid "CrossWire"
+msgstr "CrossWire"
