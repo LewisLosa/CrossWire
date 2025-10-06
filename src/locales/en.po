@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-28T15:39:38.573Z\n"
-"PO-Revision-Date: 2025-09-28T16:09:30.107Z\n"
+"PO-Revision-Date: 2025-10-06T20:35:45.424Z\n"
 "Last-Translator: \n"
 "Language: en\n"
 "Language-Team: \n"
@@ -75,3 +75,27 @@ msgstr ""
 #: src/routes/Branding.svelte
 msgid "CrossWire"
 msgstr "CrossWire"
+
+#: src/routes/+layout.svelte
+msgid "Home"
+msgstr "Home"
+
+#: src/routes/+layout.svelte
+msgid "Theme"
+msgstr "Theme"
+
+#: src/routes/+layout.svelte
+msgid "Quick start"
+msgstr "Quick start"
+
+#: src/routes/+layout.svelte
+msgid "Walkthrough"
+msgstr "Walkthrough"
+
+#: src/routes/+layout.svelte
+msgid "Docs"
+msgstr "Docs"
+
+#: src/routes/+layout.svelte
+msgid "Transitions"
+msgstr "Transitions"

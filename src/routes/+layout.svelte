@@ -20,61 +20,67 @@
   let { children }: { children: Snippet } = $props();
   let innerWidth = $state(0);
 
-  const paths = [
-    {
-      path: resolve("/"),
-      icon: iconHome,
-      iconS: iconHomeS,
-      label: "Home",
-      show: () => true,
-    },
-    {
-      path: resolve("/asdas"),
-      icon: iconPalette,
-      iconS: iconPaletteS,
-      label: "Theme",
-      show: () => true,
-    },
-    {
-      path: resolve("/docs/quick-start"),
-      icon: iconBook,
-      iconS: iconBookS,
-      label: "Quick start",
-      show: () =>
-        page.url.pathname.startsWith(resolve("/docs")) || innerWidth >= 840,
-    },
-    {
-      path: resolve("/docs/detailed-walkthrough"),
-      icon: iconBook,
-      iconS: iconBookS,
-      label: "Walkthrough",
-      show: () =>
-        page.url.pathname.startsWith(resolve("/docs")) || innerWidth >= 840,
-    },
-    {
-      path: `${base}/llms.txt`,
-      icon: iconBook,
-      iconS: iconBookS,
-      label: "llms.txt",
-      show: () =>
-        page.url.pathname.startsWith(resolve("/docs")) || innerWidth >= 840,
-    },
-    {
-      path: resolve("/docs/quick-start"),
-      icon: iconBook,
-      iconS: iconBookS,
-      label: "Docs",
-      show: () =>
-        !(page.url.pathname.startsWith(resolve("/docs")) || innerWidth >= 840),
-    },
-    {
-      path: resolve("/transitions"),
-      icon: iconAnimation,
-      iconS: iconAnimationS,
-      label: "Transitions",
-      show: () => true,
-    },
-  ];
+  // Without the method, translation cannot be done.
+  function getPaths() {
+    return [
+      {
+        path: resolve("/"),
+        icon: iconHome,
+        iconS: iconHomeS,
+        label: "Home",
+        show: () => true,
+      },
+      {
+        path: resolve("/asdas"),
+        icon: iconPalette,
+        iconS: iconPaletteS,
+        label: "Theme",
+        show: () => true,
+      },
+      {
+        path: resolve("/docs/quick-start"),
+        icon: iconBook,
+        iconS: iconBookS,
+        label: "Quick start",
+        show: () =>
+          page.url.pathname.startsWith(resolve("/docs")) || innerWidth >= 840,
+      },
+      {
+        path: resolve("/docs/detailed-walkthrough"),
+        icon: iconBook,
+        iconS: iconBookS,
+        label: "Walkthrough",
+        show: () =>
+          page.url.pathname.startsWith(resolve("/docs")) || innerWidth >= 840,
+      },
+      {
+        path: `${base}/llms.txt`,
+        icon: iconBook,
+        iconS: iconBookS,
+        label: "llms.txt",
+        show: () =>
+          page.url.pathname.startsWith(resolve("/docs")) || innerWidth >= 840,
+      },
+      {
+        path: resolve("/docs/quick-start"),
+        icon: iconBook,
+        iconS: iconBookS,
+        label: "Docs",
+        show: () =>
+          !(
+            page.url.pathname.startsWith(resolve("/docs")) || innerWidth >= 840
+          ),
+      },
+      {
+        path: resolve("/transitions"),
+        icon: iconAnimation,
+        iconS: iconAnimationS,
+        label: "Transitions",
+        show: () => true,
+      },
+    ];
+  }
+  const paths = getPaths();
   const normalizePath = (path: string) => {
     const u = new URL(path, page.url.href);
     path = u.pathname;
