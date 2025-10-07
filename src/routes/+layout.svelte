@@ -8,8 +8,15 @@
   import iconPaletteS from "@ktibow/iconset-material-symbols/palette";
   import iconBook from "@ktibow/iconset-material-symbols/book-2-outline";
   import iconBookS from "@ktibow/iconset-material-symbols/book-2";
-  import iconAnimation from "@ktibow/iconset-material-symbols/animation";
-  import iconAnimationS from "@ktibow/iconset-material-symbols/animation";
+  import iconCounter1 from "@ktibow/iconset-material-symbols/counter-1-outline";
+  import iconCounter1S from "@ktibow/iconset-material-symbols/counter-1";
+  import iconCounter2 from "@ktibow/iconset-material-symbols/counter-2-outline";
+  import iconCounter2S from "@ktibow/iconset-material-symbols/counter-2";
+  import iconCounter3 from "@ktibow/iconset-material-symbols/counter-3-outline";
+  import iconCounter3S from "@ktibow/iconset-material-symbols/counter-3";
+  import iconCounter4 from "@ktibow/iconset-material-symbols/counter-4-outline";
+  import iconCounter4S from "@ktibow/iconset-material-symbols/counter-4";
+
   import { base, resolve } from "$app/paths";
   import { page } from "$app/state";
   import NavCMLX from "$lib/nav/NavCMLX.svelte";
@@ -31,52 +38,39 @@
         show: () => true,
       },
       {
-        path: resolve("/asdas"),
+        path: resolve("/dpi"),
         icon: iconPalette,
         iconS: iconPaletteS,
-        label: "Theme",
+        label: "DPI Tools",
         show: () => true,
       },
       {
-        path: resolve("/docs/quick-start"),
-        icon: iconBook,
-        iconS: iconBookS,
-        label: "Quick start",
-        show: () =>
-          page.url.pathname.startsWith(resolve("/docs")) || innerWidth >= 840,
+        path: resolve("/dpi/byedpi"),
+        icon: iconCounter1,
+        iconS: iconCounter1S,
+        label: "ByeDPI",
+        show: () => page.url.pathname.startsWith(resolve("/dpi")),
       },
       {
-        path: resolve("/docs/detailed-walkthrough"),
-        icon: iconBook,
-        iconS: iconBookS,
-        label: "Walkthrough",
-        show: () =>
-          page.url.pathname.startsWith(resolve("/docs")) || innerWidth >= 840,
+        path: resolve("/dpi/goodbyedpi"),
+        icon: iconCounter2,
+        iconS: iconCounter2S,
+        label: "GoodByeDPI",
+        show: () => page.url.pathname.startsWith(resolve("/dpi")),
       },
       {
-        path: `${base}/llms.txt`,
-        icon: iconBook,
-        iconS: iconBookS,
-        label: "llms.txt",
-        show: () =>
-          page.url.pathname.startsWith(resolve("/docs")) || innerWidth >= 840,
+        path: resolve("/dpi/wiresock"),
+        icon: iconCounter3,
+        iconS: iconCounter3S,
+        label: "WireSock",
+        show: () => page.url.pathname.startsWith(resolve("/dpi")),
       },
       {
-        path: resolve("/docs/quick-start"),
-        icon: iconBook,
-        iconS: iconBookS,
-        label: "Docs",
-        show: () =>
-          !(
-            page.url.pathname.startsWith(resolve("/docs")) || innerWidth >= 840
-          ),
-      },
-      {
-        path: resolve("/transitions"),
-        icon: iconAnimation,
-        iconS: iconAnimationS,
-        label: "Transitions",
-        show: () => true,
+        path: resolve("/dpi/zapret"),
+        icon: iconCounter4,
+        iconS: iconCounter4S,
+        label: "Zapret",
+        show: () => page.url.pathname.startsWith(resolve("/dpi")),
       },
     ];
   }
