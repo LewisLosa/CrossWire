@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-28T15:39:38.573Z\n"
-"PO-Revision-Date: 2025-10-06T20:35:45.424Z\n"
+"PO-Revision-Date: 2025-10-07T14:39:27.684Z\n"
 "Last-Translator: \n"
 "Language: en\n"
 "Language-Team: \n"
@@ -80,22 +80,48 @@ msgstr "CrossWire"
 msgid "Home"
 msgstr "Home"
 
-#: src/routes/+layout.svelte
-msgid "Theme"
-msgstr "Theme"
+#~ msgid "Theme"
+#~ msgstr "Theme"
+
+#~ msgid "Quick start"
+#~ msgstr "Quick start"
+
+#~ msgid "Walkthrough"
+#~ msgstr "Walkthrough"
+
+#~ msgid "Docs"
+#~ msgstr "Docs"
+
+#~ msgid "Transitions"
+#~ msgstr "Transitions"
 
 #: src/routes/+layout.svelte
-msgid "Quick start"
-msgstr "Quick start"
+msgid "ByeDPI"
+msgstr "ByeDPI"
 
 #: src/routes/+layout.svelte
-msgid "Walkthrough"
-msgstr "Walkthrough"
+msgid "GoodByeDPI"
+msgstr "GoodByeDPI"
 
 #: src/routes/+layout.svelte
-msgid "Docs"
-msgstr "Docs"
+msgid "WireSock"
+msgstr "WireSock"
+
+#~ msgid "DPI"
+#~ msgstr "DPI"
 
 #: src/routes/+layout.svelte
-msgid "Transitions"
-msgstr "Transitions"
+msgid "DPI Tools"
+msgstr "DPI Tools"
+
+#: src/routes/dpi/+page.svelte
+#: src/routes/dpi/byedpi/+page.svelte
+#: src/routes/dpi/goodbyedpi/+page.svelte
+#: src/routes/dpi/wiresock/+page.svelte
+#: src/routes/dpi/zapret/+page.svelte
+msgid "sadas"
+msgstr "sadas"
+
+#: src/routes/+layout.svelte
+msgid "Zapret"
+msgstr "Zapret"

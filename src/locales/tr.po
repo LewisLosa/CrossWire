@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-28T15:39:38.574Z\n"
-"PO-Revision-Date: 2025-10-06T20:35:45.466Z\n"
+"PO-Revision-Date: 2025-10-07T14:39:27.686Z\n"
 "Last-Translator: \n"
 "Language: tr\n"
 "Language-Team: \n"
@@ -80,22 +80,48 @@ msgstr ""
 msgid "Home"
 msgstr ""
 
+#~ msgid "Theme"
+#~ msgstr ""
+
+#~ msgid "Quick start"
+#~ msgstr ""
+
+#~ msgid "Walkthrough"
+#~ msgstr ""
+
+#~ msgid "Docs"
+#~ msgstr ""
+
+#~ msgid "Transitions"
+#~ msgstr ""
+
 #: src/routes/+layout.svelte
-msgid "Theme"
+msgid "ByeDPI"
 msgstr ""
 
 #: src/routes/+layout.svelte
-msgid "Quick start"
+msgid "GoodByeDPI"
 msgstr ""
 
 #: src/routes/+layout.svelte
-msgid "Walkthrough"
+msgid "WireSock"
+msgstr ""
+
+#~ msgid "DPI"
+#~ msgstr ""
+
+#: src/routes/+layout.svelte
+msgid "DPI Tools"
+msgstr ""
+
+#: src/routes/dpi/+page.svelte
+#: src/routes/dpi/byedpi/+page.svelte
+#: src/routes/dpi/goodbyedpi/+page.svelte
+#: src/routes/dpi/wiresock/+page.svelte
+#: src/routes/dpi/zapret/+page.svelte
+msgid "sadas"
 msgstr ""
 
 #: src/routes/+layout.svelte
-msgid "Docs"
-msgstr ""
-
-#: src/routes/+layout.svelte
-msgid "Transitions"
+msgid "Zapret"
 msgstr ""
