@@ -1,5 +1,4 @@
 <!-- NOTE: Some code has been taken from github.com/KTibow/m3-svelte. Please support the developer. -->
-
 <script lang="ts">
   const github = "https://github.com/LewisLosa/CrossWire";
   const discord = "https://discord.gg/CJuhVaq2Aj";
@@ -83,7 +82,7 @@
       }
       a {
         display: flex;
-        width: calc-size(auto, size);
+        width: auto; /* Düzeltildi: Standart olmayan 'calc-size' yerine 'auto' kullanıldı */
         padding-inline: 0.5rem;
         margin-left: 0.5rem;
         border-radius: 1.5rem;
@@ -95,12 +94,52 @@
       }
     }
     p {
-      width: calc-size(auto, size);
+      width: auto; /* Düzeltildi: Standart olmayan 'calc-size' yerine 'auto' kullanıldı */
       height: 1.5rem;
       margin: 0 0 1.5rem 0;
       overflow: hidden;
       white-space: nowrap;
       transition: var(--transition);
+    }
+  }
+
+  @media (max-width: 700px) {
+    .branding {
+      padding-inline: 1rem;
+      border-radius: 1.25rem;
+
+      .row {
+        margin-top: 1rem;
+
+        img {
+          width: 2.25rem;
+          height: 2.25rem;
+        }
+
+        h1 {
+          font-size: 1.75rem;
+          margin-left: 0.75rem;
+        }
+
+        a {
+          padding-inline: 0.75rem;
+          font-size: 0.9rem;
+        }
+      }
+
+      p {
+        font-size: 0.9rem;
+        white-space: normal;
+        height: auto;
+        margin: 0 0 1rem 0;
+        line-height: 1.4;
+      }
+      &:not(:hover) {
+        p {
+          height: 0;
+          margin-bottom: 0;
+        }
+      }
     }
   }
 </style>
